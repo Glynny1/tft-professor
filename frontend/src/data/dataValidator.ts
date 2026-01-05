@@ -35,8 +35,8 @@ export async function loadAndValidateData(): Promise<ValidationResult> {
   }
 
   try {
-    // Fetch the JSON file
-    const response = await fetch('/data/comps.json')
+    // Fetch the JSON file (use BASE_URL for correct path with GitHub Pages)
+    const response = await fetch(`${import.meta.env.BASE_URL}data/comps.json`)
 
     if (!response.ok) {
       return {
