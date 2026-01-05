@@ -35,10 +35,10 @@ jobs:
       - name: Build
         working-directory: ./frontend
         run: npm run build
-        env:
-          # Add Supabase env vars here if using Supabase mode
-          # VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          # VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+        # Uncomment env section below if using Supabase mode:
+        # env:
+        #   VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+        #   VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
