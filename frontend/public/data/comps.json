@@ -1,0 +1,383 @@
+{
+  "champions": [
+    {
+      "id": "sett",
+      "name": "Sett",
+      "cost": 1,
+      "traits": ["Bruiser", "Fortune"],
+      "cdnSlug": "tft13_sett"
+    },
+    {
+      "id": "ahri",
+      "name": "Ahri",
+      "cost": 4,
+      "traits": ["Sage", "Mythic"],
+      "cdnSlug": "tft13_ahri"
+    },
+    {
+      "id": "ornn",
+      "name": "Ornn",
+      "cost": 5,
+      "traits": ["Blacksmith", "Elder"],
+      "cdnSlug": "tft13_ornn"
+    },
+    {
+      "id": "kogmaw",
+      "name": "Kog'Maw",
+      "cost": 2,
+      "traits": ["Sniper", "Void"],
+      "cdnSlug": "tft13_kogmaw"
+    },
+    {
+      "id": "caitlyn",
+      "name": "Caitlyn",
+      "cost": 1,
+      "traits": ["Sniper", "Enforcer"],
+      "cdnSlug": "tft13_caitlyn"
+    },
+    {
+      "id": "morgana",
+      "name": "Morgana",
+      "cost": 3,
+      "traits": ["Mage", "Preserver"],
+      "cdnSlug": "tft13_morgana"
+    },
+    {
+      "id": "garen",
+      "name": "Garen",
+      "cost": 1,
+      "traits": ["Warden", "Warrior"],
+      "cdnSlug": "tft13_garen"
+    },
+    {
+      "id": "akali",
+      "name": "Akali",
+      "cost": 3,
+      "traits": ["Assassin", "Pyro"],
+      "cdnSlug": "tft13_akali"
+    },
+    {
+      "id": "jhin",
+      "name": "Jhin",
+      "cost": 4,
+      "traits": ["Sniper", "Invoker"],
+      "cdnSlug": "tft13_jhin"
+    },
+    {
+      "id": "twitch",
+      "name": "Twitch",
+      "cost": 2,
+      "traits": ["Sniper", "Experiment"],
+      "cdnSlug": "tft13_twitch"
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "cost": 5,
+      "traits": ["Assassin", "Rebel"],
+      "cdnSlug": "tft13_zed"
+    },
+    {
+      "id": "sylas",
+      "name": "Sylas",
+      "cost": 3,
+      "traits": ["Mage", "Rebel"],
+      "cdnSlug": "tft13_sylas"
+    }
+  ],
+  "items": [
+    {
+      "id": "infinity_edge",
+      "name": "Infinity Edge",
+      "cdnSlug": "standard/Infinity_Edge.png"
+    },
+    {
+      "id": "last_whisper",
+      "name": "Last Whisper",
+      "cdnSlug": "standard/Last_Whisper.png"
+    },
+    {
+      "id": "giant_slayer",
+      "name": "Giant Slayer",
+      "cdnSlug": "standard/Giant_Slayer.png"
+    },
+    {
+      "id": "red_buff",
+      "name": "Red Buff",
+      "cdnSlug": "standard/Red_Buff.png"
+    },
+    {
+      "id": "bramble_vest",
+      "name": "Bramble Vest",
+      "cdnSlug": "standard/Bramble_Vest.png"
+    },
+    {
+      "id": "rabadons",
+      "name": "Rabadon's Deathcap",
+      "cdnSlug": "standard/Rabadons_Deathcap.png"
+    },
+    {
+      "id": "morellonomicon",
+      "name": "Morellonomicon",
+      "cdnSlug": "standard/Morellonomicon.png"
+    },
+    {
+      "id": "hextech_gunblade",
+      "name": "Hextech Gunblade",
+      "cdnSlug": "standard/Hextech_Gunblade.png"
+    },
+    {
+      "id": "titans_resolve",
+      "name": "Titan's Resolve",
+      "cdnSlug": "standard/Titans_Resolve.png"
+    },
+    {
+      "id": "guinsoos_rageblade",
+      "name": "Guinsoo's Rageblade",
+      "cdnSlug": "standard/Guinsoos_Rageblade.png"
+    }
+  ],
+  "comps": [
+    {
+      "id": "comp-1",
+      "name": "Mythic Ahri",
+      "set": "16",
+      "patch": "14.24",
+      "description": "Stack AP items on Ahri as your main carry. Use Ornn as a secondary carry with tank items. Frontline with Bruisers to protect Ahri.",
+      "tags": ["AP", "Mythic", "Late Game", "S-Tier"],
+      "units": [
+        {
+          "championId": "ahri",
+          "role": "carry",
+          "recommendedItems": ["rabadons", "morellonomicon", "hextech_gunblade"],
+          "optionalItems": ["giant_slayer"]
+        },
+        {
+          "championId": "ornn",
+          "role": "tank",
+          "recommendedItems": ["bramble_vest", "titans_resolve"],
+          "optionalItems": ["red_buff"]
+        },
+        {
+          "championId": "sett",
+          "role": "tank",
+          "recommendedItems": ["bramble_vest"],
+          "optionalItems": ["titans_resolve"]
+        },
+        {
+          "championId": "morgana",
+          "role": "support",
+          "recommendedItems": ["morellonomicon"],
+          "optionalItems": []
+        }
+      ],
+      "positioning": [
+        { "championId": "sett", "x": 1, "y": 0 },
+        { "championId": "ornn", "x": 3, "y": 0 },
+        { "championId": "garen", "x": 5, "y": 0 },
+        { "championId": "morgana", "x": 2, "y": 1 },
+        { "championId": "ahri", "x": 3, "y": 2 }
+      ]
+    },
+    {
+      "id": "comp-2",
+      "name": "Sniper Reroll",
+      "set": "16",
+      "patch": "14.24",
+      "description": "Hyperroll for 3-star Kog'Maw and Caitlyn. Stack attack speed and critical strike items. Frontline with cheap tanks.",
+      "tags": ["Reroll", "AD", "Sniper", "A-Tier"],
+      "units": [
+        {
+          "championId": "kogmaw",
+          "role": "carry",
+          "recommendedItems": ["infinity_edge", "last_whisper", "giant_slayer"],
+          "optionalItems": ["guinsoos_rageblade"]
+        },
+        {
+          "championId": "caitlyn",
+          "role": "carry",
+          "recommendedItems": ["giant_slayer", "last_whisper"],
+          "optionalItems": ["infinity_edge"]
+        },
+        {
+          "championId": "twitch",
+          "role": "support",
+          "recommendedItems": ["red_buff"],
+          "optionalItems": []
+        },
+        {
+          "championId": "sett",
+          "role": "tank",
+          "recommendedItems": ["bramble_vest", "titans_resolve"],
+          "optionalItems": []
+        }
+      ],
+      "positioning": [
+        { "championId": "sett", "x": 1, "y": 0 },
+        { "championId": "garen", "x": 4, "y": 0 },
+        { "championId": "kogmaw", "x": 2, "y": 2 },
+        { "championId": "caitlyn", "x": 3, "y": 2 },
+        { "championId": "twitch", "x": 4, "y": 2 }
+      ]
+    },
+    {
+      "id": "comp-3",
+      "name": "Assassin Zed",
+      "set": "16",
+      "patch": "14.24",
+      "description": "Fast 8 to find Zed. Stack AD items on Zed and use Akali as secondary carry. Position assassins in the backline for optimal jumps.",
+      "tags": ["Assassin", "AD", "Fast 8", "S-Tier"],
+      "units": [
+        {
+          "championId": "zed",
+          "role": "carry",
+          "recommendedItems": ["infinity_edge", "last_whisper", "giant_slayer"],
+          "optionalItems": ["hextech_gunblade"]
+        },
+        {
+          "championId": "akali",
+          "role": "carry",
+          "recommendedItems": ["hextech_gunblade", "infinity_edge"],
+          "optionalItems": ["morellonomicon"]
+        },
+        {
+          "championId": "sylas",
+          "role": "support",
+          "recommendedItems": ["morellonomicon"],
+          "optionalItems": ["rabadons"]
+        }
+      ],
+      "positioning": [
+        { "championId": "sett", "x": 0, "y": 0 },
+        { "championId": "garen", "x": 6, "y": 0 },
+        { "championId": "zed", "x": 2, "y": 3 },
+        { "championId": "akali", "x": 3, "y": 3 },
+        { "championId": "sylas", "x": 4, "y": 3 }
+      ]
+    },
+    {
+      "id": "comp-4",
+      "name": "Jhin Sniper",
+      "set": "16",
+      "patch": "14.24",
+      "description": "Stack Jhin with AD and crit items. Use Sniper trait for backline damage. Slow roll at 7 for upgrades.",
+      "tags": ["Sniper", "AD", "Slow Roll", "A-Tier"],
+      "units": [
+        {
+          "championId": "jhin",
+          "role": "carry",
+          "recommendedItems": ["infinity_edge", "last_whisper", "giant_slayer"],
+          "optionalItems": ["guinsoos_rageblade"]
+        },
+        {
+          "championId": "caitlyn",
+          "role": "support",
+          "recommendedItems": ["red_buff"],
+          "optionalItems": ["giant_slayer"]
+        },
+        {
+          "championId": "sett",
+          "role": "tank",
+          "recommendedItems": ["bramble_vest", "titans_resolve"],
+          "optionalItems": []
+        },
+        {
+          "championId": "garen",
+          "role": "tank",
+          "recommendedItems": ["bramble_vest"],
+          "optionalItems": ["titans_resolve"]
+        }
+      ],
+      "positioning": [
+        { "championId": "sett", "x": 2, "y": 0 },
+        { "championId": "garen", "x": 4, "y": 0 },
+        { "championId": "jhin", "x": 3, "y": 2 },
+        { "championId": "caitlyn", "x": 2, "y": 2 },
+        { "championId": "kogmaw", "x": 4, "y": 2 }
+      ]
+    },
+    {
+      "id": "comp-5",
+      "name": "Mage Morgana",
+      "set": "16",
+      "patch": "14.24",
+      "description": "Vertical Mage comp with Morgana and Sylas as main carries. Stack AP items and prioritize mage trait activation.",
+      "tags": ["Mage", "AP", "Mid Game", "B-Tier"],
+      "units": [
+        {
+          "championId": "morgana",
+          "role": "carry",
+          "recommendedItems": ["rabadons", "morellonomicon", "hextech_gunblade"],
+          "optionalItems": ["giant_slayer"]
+        },
+        {
+          "championId": "sylas",
+          "role": "carry",
+          "recommendedItems": ["rabadons", "hextech_gunblade"],
+          "optionalItems": ["morellonomicon"]
+        },
+        {
+          "championId": "ahri",
+          "role": "support",
+          "recommendedItems": ["morellonomicon"],
+          "optionalItems": ["rabadons"]
+        },
+        {
+          "championId": "sett",
+          "role": "tank",
+          "recommendedItems": ["bramble_vest", "titans_resolve"],
+          "optionalItems": []
+        }
+      ],
+      "positioning": [
+        { "championId": "sett", "x": 1, "y": 0 },
+        { "championId": "garen", "x": 5, "y": 0 },
+        { "championId": "morgana", "x": 2, "y": 1 },
+        { "championId": "sylas", "x": 3, "y": 2 },
+        { "championId": "ahri", "x": 4, "y": 2 }
+      ]
+    },
+    {
+      "id": "comp-6",
+      "name": "Flex Bruiser",
+      "set": "16",
+      "patch": "14.24",
+      "description": "Flexible bruiser comp that can pivot into multiple carries. Play strongest board and itemize based on what you hit.",
+      "tags": ["Flex", "Bruiser", "Early Game", "B-Tier"],
+      "units": [
+        {
+          "championId": "sett",
+          "role": "flex",
+          "recommendedItems": ["bramble_vest", "titans_resolve"],
+          "optionalItems": ["guinsoos_rageblade"]
+        },
+        {
+          "championId": "garen",
+          "role": "tank",
+          "recommendedItems": ["bramble_vest", "titans_resolve"],
+          "optionalItems": []
+        },
+        {
+          "championId": "ornn",
+          "role": "tank",
+          "recommendedItems": ["bramble_vest"],
+          "optionalItems": ["titans_resolve"]
+        },
+        {
+          "championId": "akali",
+          "role": "flex",
+          "recommendedItems": ["hextech_gunblade", "infinity_edge"],
+          "optionalItems": ["giant_slayer"]
+        }
+      ],
+      "positioning": [
+        { "championId": "sett", "x": 2, "y": 0 },
+        { "championId": "garen", "x": 3, "y": 0 },
+        { "championId": "ornn", "x": 4, "y": 0 },
+        { "championId": "akali", "x": 3, "y": 2 },
+        { "championId": "caitlyn", "x": 5, "y": 2 }
+      ]
+    }
+  ]
+}
+
